@@ -1,33 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d125f4b1-1db8-4a72-9d97-b85d1d1434d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Banned.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/block.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/brawl.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/commander.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/legacy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/modern.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pioneer.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/standard.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/vintage-restricted.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/vintage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BanList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Verifier.java" afterDir="false" />
+    <list default="true" id="d125f4b1-1db8-4a72-9d97-b85d1d1434d7" name="Default Changelist" comment="&quot;Created a basic command line program to check MTG ban lists for either specific cards, or entire deck lists&quot;">
       <change afterPath="$PROJECT_DIR$/../GroceryBagging/.idea/markdown-navigator.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroceryBagging/src/ARC.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroceryBagging/src/Local.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroceryBagging/src/MRV.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroceryBagging/src/TestFile01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CS354-2-f18" beforeDir="false" afterPath="$PROJECT_DIR$/../CS354-2-f18" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroceryBagging/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroceryBagging/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroceryBagging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroceryBagging/.idea/workspace.xml" afterDir="false" />
@@ -62,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="101" column="40" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -83,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Verifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="761">
+            <state relative-caret-position="381">
               <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding>
                 <element signature="e#708#709#0" expanded="true" />
@@ -113,7 +94,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -126,10 +107,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1490" />
-    <option name="y" value="80" />
-    <option name="width" value="1522" />
-    <option name="height" value="1932" />
+    <option name="x" value="-12" />
+    <option name="y" value="68" />
+    <option name="width" value="3026" />
+    <option name="height" value="1946" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -149,6 +130,11 @@
             <path>
               <item name="Banned" type="b2602c69:ProjectViewProjectNode" />
               <item name="Banned" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Banned" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Banned" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -158,7 +144,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573629290498" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573664515117" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -179,9 +165,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="Banned" />
       <module name="Banned" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -215,15 +200,15 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.51477665" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.9574468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32977462" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32977462" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32977462" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32977462" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -238,16 +223,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Created a basic command line program to check MTG ban lists for either specific cards, or entire deck lists&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Created a basic command line program to check MTG ban lists for either specific cards, or entire deck lists&quot;" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/commander.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="101" column="40" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BanList.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -261,7 +243,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Verifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
+        <state relative-caret-position="381">
           <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
             <element signature="e#708#709#0" expanded="true" />
@@ -269,6 +251,13 @@
             <element signature="e#1134#1135#0" expanded="true" />
             <element signature="e#1165#1166#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
