@@ -17,19 +17,19 @@ restricted list, and report them to the user via the command line.
 
 The program includes the following files:
 - src
-    - -Main -- the primary driver for this program
-    - -BanList -- the class that holds the ban lists
-    - -Verifier -- verifies user input
+    - Main -- the primary driver for this program
+    - BanList -- the class that holds the ban lists
+    - Verifier -- verifies user input
 - data
-    - -block.txt -- ban list for block format
-    - -brawl.txt -- ban list for brawl format
-    - -commander.txt -- ban list for commander format
-    - -legacy.txt -- ban list for legacy format
-    - -modern.txt -- ban list for modern format
-    - -pioneer.txt -- ban list for pioneer format
-    - -standard.txt -- ban list for standard format
-    - -vintage.txt -- ban list for vintage format
-    - -vintage-restricted.txt -- restricted list for vintage format
+    - block.txt -- ban list for block format
+    - brawl.txt -- ban list for brawl format
+    - commander.txt -- ban list for commander format
+    - legacy.txt -- ban list for legacy format
+    - modern.txt -- ban list for modern format
+    - pioneer.txt -- ban list for pioneer format
+    - standard.txt -- ban list for standard format
+    - vintage.txt -- ban list for vintage format
+    - vintage-restricted.txt -- restricted list for vintage format
 - Makefile - the build system for this program
 - README.md - this file
 
