@@ -3,6 +3,8 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 public class BanList {
+    private static final int MAX = 9;
+    private static final int MIN = 1;
     private static final int COMMANDER = 1;
     private static final int STANDARD = 2;
     private static final int BRAWL = 3;
@@ -11,13 +13,16 @@ public class BanList {
     private static final int VINTAGE = 6;
     private static final int LEGACY = 7;
     private static final int BLOCK = 8;
+    private static final int PAUPER = 9;
     private int listStyle;
     private HashSet<String> banList;
     private HashSet<String> restrictedList;
+    private HashSet<String> commanderAltList;
 
     public BanList() {
         banList = new HashSet<>();
         restrictedList = new HashSet<>();
+        commanderAltList = new HashSet<>();
     }
 
     public BanList(int listStyle) {
@@ -41,28 +46,46 @@ public class BanList {
             File deckList = new File(fileName);
             Scanner scanner = new Scanner(deckList);
             String next = new String();
-            int i = 0;
-            while(scanner.hasNextLine()) {
-                i++;
+//            int i = 0;
+            int cardCount = 0;
+            int banCount = 0;
+            int restCount = 0;
+            while (scanner.hasNextLine()) {
+                //i++;
+                cardCount++;
                 next = scanner.nextLine().toLowerCase().trim();
-                System.out.printf("card %d = %s\n", i, next);
+                //System.out.printf("card %d = %s\n", i, next);
 
                 if (banList.contains(next)) {
                     System.out.printf("%s is on the ban-list!\n", next);
+                    banCount++;
                     retVal = false;
+                }
+
+                if (!commanderAltList.isEmpty()) {
+                    if(commanderAltList.contains(next)) {
+                        System.out.printf("%s is on the Commander Website ban list!\n", next);
+                    }
                 }
 
                 if(!restrictedList.isEmpty()) {
                     if(restrictedList.contains(next)) {
+                        restCount++;
                         System.out.printf("%s is on the restricted list!\n", next);
+                        if (restCount > 2) {
+                            retVal = false;
+                        }
                     }
                 }
             }
+
+            System.out.printf("Out of %d cards, you have %d banned cards, and %d restricted cards.\n", cardCount, banCount, restCount);
 
         } catch (Exception e) {
             System.out.println("invalid input file");
             retVal = false;
         }
+
 
         return retVal;
     }
@@ -108,7 +131,7 @@ public class BanList {
         boolean retVal = true;
         this.listStyle = deckStyle;
 
-        if (listStyle < 1 || listStyle > 8) {
+        if (listStyle < MIN || listStyle > MAX) {
             System.out.println("Invalid ban-list style selection!!!");
             return false;
         }
@@ -116,6 +139,9 @@ public class BanList {
         switch (this.listStyle) {
             case COMMANDER:
                 retVal = loadList("data/commander.txt");
+                if (retVal) {
+                    retVal = loadCommAltList("data/CommanderWebSiteBanList.txt");
+                }
                 break;
             case STANDARD:
                 retVal = loadList("data/standard.txt");
@@ -139,6 +165,9 @@ public class BanList {
                 break;
             case BLOCK:
                 retVal = loadList("data/block.txt");
+                break;
+            case PAUPER:
+                retVal = loadList("data/pauper.txt");
                 break;
             default:
                 System.out.println("INVALID SELECTION!!! THIS SHOULDN'T HAPPEN!!! But, because it did, " +
@@ -190,6 +219,29 @@ public class BanList {
         } catch (Exception e) {
             // file is bad, can't build the list
             System.out.printf("restricted list file error in file %s.\n", fileName);
+            retVal = false;
+        }
+
+        return retVal;
+    }
+
+    private boolean loadCommAltList(String fileName) {
+        boolean retVal;
+
+        try {
+            File listFile = new File(fileName);
+            Scanner scanner = new Scanner(listFile);
+
+            // build the list
+            while(scanner.hasNext()) {
+                commanderAltList.add(scanner.nextLine().trim().toLowerCase());
+            }
+
+            // successfully read the file
+            retVal = true;
+        } catch (Exception e) {
+            // file is bad, can't build the list
+            System.out.printf("Commander Alternate list file error in file %s.\n", fileName);
             retVal = false;
         }
 

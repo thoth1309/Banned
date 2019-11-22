@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.HashSet;
 
 public class Verifier {
@@ -27,6 +28,8 @@ public class Verifier {
         styleList.add("brawl");
         styleList.add("p");
         styleList.add("pioneer");
+        styleList.add("pa");
+        styleList.add("pauper");
 
         // set up the card count list
         countList = new HashSet<>();
@@ -48,5 +51,19 @@ public class Verifier {
 
     public boolean verifyCardCount(String cardCount) {
         return countList.contains(cardCount);
+    }
+
+    public boolean verifyDeckList(String deckList) {
+        File tempFile = new File(deckList);
+
+        return tempFile.exists();
+    }
+
+    public boolean verifyYesNo(String yesNo) {
+        boolean valid = false;
+        if(!yesNo.equals("yes") && !yesNo.equals("no"))
+            valid = true;
+
+        return valid;
     }
 }

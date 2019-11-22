@@ -13,7 +13,7 @@ public class Banned {
 
         System.out.println("Welcome to my Unofficial MTG Ban-List Checker!");
         System.out.println("Which playstyle are you using?");
-        System.out.println("(Please select (c)ommander, (s)tandard, (b)rawl, (p)ioneer, (m)odern, (v)intage, (l)egacy, or (bl)ock)");
+        System.out.println("(Please select (c)ommander, (s)tandard, (b)rawl, (p)ioneer, (m)odern, (v)intage, (l)egacy, (bl)ock), or (pa)uper");
         playStyle = scanner.nextLine().trim().toLowerCase();
 
         // make sure the user selected a valid play style
@@ -27,6 +27,7 @@ public class Banned {
             System.out.println("(v)intage");
             System.out.println("(l)egacy");
             System.out.println("(bl)ock\n");
+            System.out.println("(pa)uper");
             playStyle = scanner.nextLine().trim().toLowerCase();
         }
 
@@ -82,11 +83,17 @@ public class Banned {
             case "block":
                 deckStyle = 8;
                 break;
+            case "pa":
+                deckStyle = 9;
+                break;
+            case "pauper":
+                deckStyle = 9;
+                break;
             default:
                 deckStyle = 2;
                 break;
         }
-        System.out.println(deckStyle);
+//        System.out.println(deckStyle);
 
         banlist.setDeckStyle(deckStyle);
 
@@ -114,13 +121,45 @@ public class Banned {
             System.out.println("Thank you for checking your card! Come again soon!");
         } else {
             String fileName = new String();
+            // verify in a loop
             System.out.println("Please enter the name and relative path of the file containing your decklist");
             fileName = scanner.nextLine().trim().toLowerCase();
 
+            while (!verifier.verifyDeckList(fileName)) {
+                System.out.println("Please enter a valid file path:");
+                fileName = scanner.nextLine().trim().toLowerCase();
+            }
             if (banlist.verifyDeckList(fileName))
-                System.out.println("cards do not appear in current ban list.");
+                System.out.println("Congratulations! Your deck-list is valid!.");
+
+            System.out.println("Would you like to check more cards?");
+            String response = scanner.nextLine().trim().toLowerCase();
+
+            while (verifier.verifyYesNo(response)) {
+                System.out.println("Please enter yes or no.");
+                response = scanner.nextLine().trim().toLowerCase();
+            }
+
+            if (response.equals("yes")) {
+                System.out.println("Would you like to change play format?");
+                response = scanner.nextLine().trim().toLowerCase();
+
+                while (verifier.verifyYesNo(response)) {
+                    System.out.println("Please enter yes or no.");
+                    response = scanner.nextLine().trim().toLowerCase();
+                }
+
+                if(response.equals("yes")) {
+                    // TODO: start over
+                    System.out.println("not yet implemented!");
+                } else if (response.equals("no")) {
+                    // TODO: start at deck or card selection
+                    System.out.println("not yet implemented!");
+                }
+            }
+
             System.out.println("Thank you for checking your decklist! Play well, my friend!");
 
-        }   // TODO: could provide a multiple single card option
+        }
     }
 }

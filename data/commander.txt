@@ -1,69 +1,76 @@
-Arcane Denial
-Brainstorm
-Capsize
-Counterspell
-Cyclonic Rift
-Dispel
-Dramatic Reversal
-Enlightened Tutor
-Force of Will
-Mana Drain
-Muddle the Mixture
-Mystical Tutor
-Path to Exile
-Pongify
-Pull from Eternity
-Rapid Hybridization
-Sphinx's Revelation
-Stroke of Genius
-Swan Song
-Swords to Plowshares
-Teferi's Protection
-Thirst for Knowledge
-Command Tower
-Glacial Fortress
-Island
-Plains
-Prairie Stream
-Chrome Mox
-Gilded Lotus
-Helm of Obedience
-Isochron Scepter
-Mana Crypt
-Mind Stone
-Mox Diamond
-Mox Opal
-Mycosynth Lattice
-Nevinyrral's Disk
-Sol Ring
-Sphere of Resistance
-Thorn of Amethyst
-Avacyn, Angel of Hope
-Aven Mindcensor
-Elesh Norn, Grand Cenobite
-Fatespinner
-Glowrider
-Grand Abolisher
-Lodestone Golem
-Thalia, Guardian of Thraben
-Walking Ballista
-Karn, the Great Creator
-Armageddon
-Balancing Act
-Fabricate
-Flood of Recollection
-Idyllic Tutor
-Merchant Scroll
-Ponder
-Preordain
-Revoke Existence
-Serum Visions
-Supreme Verdict
-Aura of Silence
-Back to Basics
-Decree of Silence
-Grasp of Fate
-Karmic Justice
-Propaganda
-Rest in Peace
-Solemnity
+Worldknit
+Weight Advantage
+Unexpected Potential
+Summoner's Bond
+Sovereign's Realm
+Sentinel Dispatch
+Secrets of Paradise
+Secret Summoning
+Power Play
+Natural Unity
+Muzzio's Preparations
+Iterative Analysis
+Incendiary Dissent
+Immediate Action
+Hymn of the Wilds
+Hold the Perimeter
+Hired Heist
+Emissary's Ploy
+Echoing Boon
+Double Stroke
+Brago's Favor
+Backup Plan
+Assemble the Rank and Vile
+Advantageous Proclamation
+Adriana's Valor
+Amulet of Quoz
+Bronze Tablet
+Contract from Below
+Darkpact
+Demonic Attorney
+Jeweled Bird
+Rebirth
+Tempest Efreet
+Timmerian Fiends
+Ancestral Recall
+Balance
+Biorhythm
+Black Lotus
+Braids, Cabal Minion
+Chaos Orb
+Coalition Victory
+Channel
+Emrakul, the Aeons Torn
+Erayo, Soratami Ascendant
+Falling Star
+Fastbond
+Gifts Ungiven
+Griselbrand
+Iona, Shield of Emeria
+Karakas
+Leovold, Emissary of Trest
+Library of Alexandria
+Limited Resources
+Mox Emerald
+Mox Jet
+Mox Pearl
+Mox Ruby
+Mox Sapphire
+Panoptic Mirror
+Paradox Engine
+Primeval Titan
+Prophet of Kruphix
+Recurring Nightmare
+Rofellos, Llanowar Emissary
+Shahrazad
+Sundering Titan
+Sway of the Stars
+Sylvan Primordial
+Time Vault
+Time Walk
+Tinker
+Tolarian Academy
+Trade Secrets
+Upheaval
+Worldfire
+Yawgmoth's Bargain
